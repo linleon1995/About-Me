@@ -22,11 +22,17 @@
 
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\usepackage{ctex}
+\usepackage{titlesec}
 
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
-\colorlet{awesome}{awesome-red}
+
+\definecolor{color_navy}{RGB}{0,65, 89}
+\definecolor{color_light_gray}{RGB}{191, 203, 210}
+
+\colorlet{awesome}{awesome-emerald}
 % Uncomment if you would like to specify your own color
 % \definecolor{awesome}{HTML}{3E6D9C}
 
@@ -44,6 +50,9 @@
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
+\titleformat{\section}
+  {\color{color_navy}\normalfont\Large\bfseries} % 設置章節標題顏色
+  {}{0pt}{}[\color{color_navy}\titlerule] % 設置章節標題下劃線顏色
 
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
@@ -51,16 +60,16 @@
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
 % \photo[rectangle,edge,right]{./examples/profile}
-\name{Byungjin}{Park}
-\position{Site Reliability Engineer{\enskip\cdotp\enskip}Software Architect}
-\address{235, World Cup buk-ro, Mapo-gu, Seoul, 03936, Republic of Korea}
+\name{Jing Siang}{Lin}
+\position{Machine Learning Engineer}
+% \address{235, World Cup buk-ro, Mapo-gu, Seoul, 03936, Republic of Korea}
 
-\mobile{(+82) 10-9030-1843}
-\email{posquit0.bj@gmail.com}
+\mobile{(+886) 0953-216-976}
+\email{l84328g@gmail.com}
 %\dateofbirth{January 1st, 1970}
 \homepage{www.posquit0.com}
-\github{posquit0}
-\linkedin{posquit0}
+\github{linleon1995}
+\linkedin{jing-siang-lin-488608184}
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
 % \twitter{@twit}
@@ -74,7 +83,7 @@
 % \googlescholar{googlescholar-id}{}
 % \extrainfo{extra information}
 
-\quote{``Be the change that you want to see in the world."}
+% \quote{``Be the change that you want to see in the world."}
 
 
 %-------------------------------------------------------------------------------
@@ -98,8 +107,8 @@
 %-------------------------------------------------------------------------------
 \input{resume/summary.tex}
 \input{resume/experience.tex}
-\input{resume/honors.tex}
-\input{resume/certificates.tex}
+% \input{resume/honors.tex}
+% \input{resume/certificates.tex}
 % \input{resume/presentation.tex}
 % \input{resume/writing.tex}
 % \input{resume/committees.tex}
