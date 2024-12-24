@@ -1,7 +1,7 @@
 %-------------------------------------------------------------------------------
 %	SECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsection{Side Projects}
+\cvsection{Projects}
 
 
 %-------------------------------------------------------------------------------
@@ -14,19 +14,42 @@
   \cventrynotitle
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Stable Diffusion}
+        \item {LLM based Video Analysis}
         \begin{itemize}
-            \item {Implemented a stable diffusion algorithm for image processing.}
-            \item {The algorithm is based on the heat equation and the Perona-Malik equation.}
+            \item {動機：合作夥伴Microsoft開發了Video Analysis服務。但是架設於雲端且收費高昂。希望透過實作了解性能以及成本節省的可行性}
+            \item {使用LongLLM模型進行視訊分析，並且透過Huggingface部署成簡易的線上服務。}
         \end{itemize}
-        \item {RAG}
+        \item {Spotify Chat}
         \begin{itemize}
-            \item {Implemented a stable diffusion algorithm for image processing.}
-            \item {The algorithm is based on the heat equation and the Perona-Malik equation.}
+            \item {動機：平時有收聽Podcast的習慣，但是因為功能上的限制難以搜尋特定集數或是內容。}
+            \item {使用Spotify API收集語音並使用XX模型轉換為文字，自行架設部署Chat與Semantic Search服務，並且透過問答尋找相關內容。}
+        \end{itemize}
+        \item {Event Agent (對話式班表設定 / 事件語意搜尋)}
+        \begin{itemize}
+            \item {動機：EHS系統portal時常有使用者反饋，表示設定班表的繁瑣以及事件搜尋的困難}
+            \item {自行架設AI Agent 服務，結合Prompt、RAG資訊為實際Action，並透過API Gateway實現班表的快速設定。}
         \end{itemize}
       \end{cvitems}
     }
+    
+    % % Custom command for project title
+    % \newcommand{\projecttitle}[1]{\textbf{#1}}
 
+    % % Custom command for skill with color
+    % \newcommand{\skill}[2]{\textcolor{#1}{#2}} % Usage: \skill{color}{text}
+
+    % % Tabular for project and skills
+    % \noindent
+    % \begin{tabular}{@{}l@{\hspace{1em}}l@{\hspace{1em}}l@{\hspace{1em}}l@{}}
+    %     \projecttitle{Project1} & \vert & \skill{gray}{Skill 1} & \vert & \skill{gray}{Skill 2} & \vert & \skill{gray}{Skill 3} \\
+    % \end{tabular}
+
+    % \vspace{0.5em} % Add some vertical spacing
+
+    % \begin{itemize}
+    %     \item Item 1
+    %     \item Item 2
+    % \end{itemize}
 
 %---------------------------------------------------------
 \end{cventries}

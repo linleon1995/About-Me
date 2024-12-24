@@ -11,37 +11,44 @@
 
 
 %---------------------------------------------------------
-  \cventry
+  \cventrynew
     {Machine Learning Engineer} % Job title
     {ASUS AIoT} % Organization
-    {Taipei, Taiwan} % Location
-    {Jul. 2021 - Jul. 2024} % Date(s)
+    % {Taipei, Taiwan} % Location
+    {Jul. 2021 - Dec. 2024} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
         \item {Environment, health and safety (EHS) Cloud Service}
         \begin{itemize}
-            \item 協助開發Scheduler用於定期部署視訊串流推論服務
-            \item 協助開發視訊串流推論框架
-            \item 協助進行Azure AI Service 整合工作
+            % \item 協作開發視訊串流推論服務，包含Inference Service用於視訊串流推論、Scheduler用於定期部署推論服務、Event Engine用於確認事件。
+            % \item 優化模型推論工作
+            % \item 協作開發AI Agent Service，用於整合第三方AI服務，並提供統一介面。
+            \item Video Stream Inference Service: 協作開發視訊串流推論服務，設計架構支持大規模視訊推論工作負載。
+            \item Scheduler: 協作開發任務排程工具，用於定期部署推論服務。
+            \item Event Engine: 協助設計事件告警系統，界定服務工作邊界與制訂一致的事件表達形式。
+            \item Inference Optimization: 使用TensorRT優化模型推論工作，提升推論性能。
+            \item AI Agent Service: 與團隊協作整合第三方 AI 服務，提供統一 API 界面。
         \end{itemize}
-        \item {Computer Vision Algorithm Develope}
+        \item {Demo Tool}
         \begin{itemize}
-            \item 協助開發PPE演算法，證明
-            \item 協助開發Motion Detection算法並透過減少無效推論節省客戶大量成本
-            \item MMI
-            \item Unsupervised Domain Adaptation
+            \item 協助使用Streamlit開發輕量化的Demo工具，用於展示EHS服務相關成果。
         \end{itemize}
-        \item {MLOps pipeline Develope}
+        \item {Machine Learning Algorithm Develope}
         \begin{itemize}
-            \item 透過整合Airflow, Mlflow, DVC, CVAT, Git等工具，建立完整的模型訓練流程。並節省團隊大量模型開發時間。
+            \item Protective personal equipment (PPE): 協助設計PPE演算法。並訓練新版本PPE模型，在測試資料集上mAP由X提升到Y，準確度提升Z\%
+            % \item 設計稀疏事件推論架構： 透過稀疏事件推論架構，提升視訊串流推論效能，預估能夠帶來至少X\%的成本節省。
         \end{itemize}
-        \item Snoring Detection on Mobile Device
+        % \item {MLOps pipeline Develope}
+        % \begin{itemize}
+        %     \item EHS Training Service: 使用Airflow、Pytorch建立統一訓練框架。提供簡易、一致的訓練介面。
+        % \end{itemize}
+        \item \textbf{\textcolor{blue}{Medical AI}} \textbf{\textcolor{gray}{| C++ | TensorFlow | PyTorch}}
+        % \item {Medical AI}
         \begin{itemize}
-            \item 與 ASUS 移動裝置部門合作，開發準確率達 94.12\% 的鼾聲偵測演算法，並協助實作使用 TensorFlow 導出 TFLite 模型並以 C++ 實作頻譜轉換，透過微調預訓練模型增強在高噪音環境下的偵測表現。
+            \item Snoring Detection: 與 ASUS 移動裝置部門合作，開發鼾聲偵測演算法，準確率高達 94.12 \%。負責將模型以 TensorFlow 導出為 TFLite 格式，並以 C++ 實現頻譜轉換功能。同時，透過微調預訓練模型，大幅提升演算法在高噪音環境下的偵測性能。
         \end{itemize}
-        \item 3D Lung Nodule Segmentation
         \begin{itemize}
-            \item 與台南大型醫院合作開發肺結節分割與分類演算法，在醫院測試集上平均分割 DSC 達 0.7481，分類準確率達 91.84\%，並開發 3D Slicer 插件協助醫院進行模型推論與肺結節預測可視化。
+            \item 3D Lung Nodule Segmentation: 與台南大型醫院合作開發肺結節分割與分類演算法，在醫院測試集上平均分割 DSC 達 0.7481，分類準確率達 91.84\%，並開發 3D Slicer 插件協助醫院進行模型推論與肺結節預測可視化。
         \end{itemize}
       \end{cvitems}
     }

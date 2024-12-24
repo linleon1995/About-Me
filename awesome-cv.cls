@@ -77,7 +77,10 @@
 % Needed to use icons from font-awesome
 \RequirePackage{fontawesome5}
 \RequirePackage{roboto}
-\RequirePackage[default,opentype]{sourcesanspro}
+% \RequirePackage[default,opentype]{sourcesanspro}
+\newcommand{\TimesNewRoman}{\fontspec{Times New Roman}}
+\newcommand{\Arial}{\fontspec{Arial}}
+
 % Needed for the photo ID
 \RequirePackage[skins]{tcolorbox}
 % Needed to deal a paragraphs
@@ -124,7 +127,8 @@
 % Gray-scale colors
 \definecolor{white}{HTML}{FFFFFF}
 \definecolor{black}{HTML}{000000}
-\definecolor{darkgray}{HTML}{333333}
+\definecolor{darkergray}{HTML}{1E1E1E}
+\definecolor{darkgray}{HTML}{313131}
 \definecolor{gray}{HTML}{5D5D5D}
 \definecolor{lightgray}{HTML}{999999}
 % Basic colors
@@ -132,9 +136,9 @@
 \definecolor{orange}{HTML}{FDA333}
 \definecolor{purple}{HTML}{D3A4F9}
 \definecolor{red}{HTML}{FB4485}
-\definecolor{blue}{HTML}{6CE0F1}
+\definecolor{blue}{HTML}{2337C6}
 % Text colors
-\definecolor{darktext}{HTML}{414141}
+\colorlet{darktext}{darkergray}
 \colorlet{text}{darkgray}
 \colorlet{graytext}{gray}
 \colorlet{lighttext}{lightgray}
@@ -148,7 +152,8 @@
 \definecolor{awesome-nephritis}{HTML}{27AE60}
 \definecolor{awesome-concrete}{HTML}{95A5A6}
 \definecolor{awesome-darknight}{HTML}{131A28}
-\colorlet{awesome}{awesome-red}
+\definecolor{awesome-darkgoldenrod}{HTML}{B8860B}
+\colorlet{awesome}{darktext}
 
 % Boolean value to switch section color highlighting
 \newbool{acvSectionColorHighlight}
@@ -165,14 +170,19 @@
 %-------------------------------------------------------------------------------
 \newcommand*{\headerfont}{\roboto}
 \newcommand*{\headerfontlight}{\robotolight}
-\newcommand*{\footerfont}{\sourcesanspro}
-\newcommand*{\bodyfont}{\sourcesanspro}
-\newcommand*{\bodyfontlight}{\sourcesansprolight}
+% \newcommand*{\footerfont}{\sourcesanspro}
+% \newcommand*{\bodyfont}{\sourcesanspro}
+% \newcommand*{\bodyfontlight}{\sourcesansprolight}
+\newcommand*{\footerfont}{\TimesNewRoman}
+\newcommand*{\bodyfont}{\TimesNewRoman}
+\newcommand*{\bodyfontlight}{\TimesNewRoman}
 
 %-------------------------------------------------------------------------------
 %                Configuration for styles
 %-------------------------------------------------------------------------------
 % Configure styles for each CV elements
+\newcommand*{\plaintextstytle}[1]{{\fontsize{10pt}{0.8em}\bodyfont\bfseries\color{darktext} #1}}
+
 % For fundamental structures
 \newcommand*{\headerfirstnamestyle}[1]{{\fontsize{28pt}{1em}\headerfontlight\color{graytext} #1}}
 \newcommand*{\headerlastnamestyle}[1]{{\fontsize{28pt}{1em}\headerfont\bfseries\color{text} #1}}
@@ -181,16 +191,17 @@
 \newcommand*{\headersocialstyle}[1]{{\fontsize{6.8pt}{1em}\headerfont\color{text} #1}}
 \newcommand*{\headerquotestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\itshape\color{darktext} #1}}
 \newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{lighttext} #1}}
-\newcommand*{\sectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
+\newcommand*{\sectionstyle}[1]{{\fontsize{18pt}{1em}\bodyfont\bfseries\color{darktext}\@sectioncolor #1}}
 \newcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\scshape\textcolor{text}{#1}}}
 \newcommand*{\paragraphstyle}{\fontsize{8pt}{0.8em}\bodyfontlight\upshape\color{text}}
 
 % For elements of entry
-\newcommand*{\entrytitlestyle}[1]{{\fontsize{9pt}{0.8em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\entrypositionstyle}[1]{{\fontsize{8pt}{0.8em}\bodyfont\scshape\color{graytext} #1}}
-\newcommand*{\entrydatestyle}[1]{{\fontsize{8pt}{0.8em}\bodyfontlight\slshape\color{graytext} #1}}
-\newcommand*{\entrylocationstyle}[1]{{\fontsize{9pt}{0.8em}\bodyfontlight\slshape\color{awesome} #1}}
-\newcommand*{\descriptionstyle}[1]{{\fontsize{8pt}{0.8em}\bodyfontlight\upshape\color{text} #1}}
+\newcommand*{\entrytitlestyle}[1]{{\fontsize{10pt}{0.85em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\entrytitlestylenew}[1]{{\fontsize{10pt}{0.85em}\bodyfont\bfseries\color{blue} #1}}
+\newcommand*{\entrypositionstyle}[1]{{\fontsize{10pt}{0.85em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\entrydatestyle}[1]{{\fontsize{10pt}{0.85em}\bodyfontlight\slshape\color{graytext} #1}}
+\newcommand*{\entrylocationstyle}[1]{{\fontsize{10pt}{0.85em}\bodyfontlight\slshape\color{awesome} #1}}
+\newcommand*{\descriptionstyle}[1]{{\fontsize{9pt}{0.85em}\bodyfontlight\upshape\color{text} #1}}
 
 % For elements of subentry
 \newcommand*{\subentrytitlestyle}[1]{{\fontsize{8pt}{1em}\bodyfont\mdseries\color{graytext} #1}}
@@ -676,6 +687,22 @@
   \end{tabular*}%
 }
 
+
+\newcommand*{\cventrynew}[4]{%
+  \vspace{-2.0mm}
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
+    \ifempty{#2#3}
+      {\entrypositionstyle{#1} & \entrydatestyle{#4} \\}
+      {\entrypositionstyle{#1} \plaintextstytle{at} \entrytitlestylenew{#2} & \entrylocationstyle{#3} \\}
+    \ifstrempty{#4}
+      {}
+      {\multicolumn{2}{L{\textwidth}}{\descriptionstyle{#4}} \\}
+  \end{tabular*}%
+}
+
+
 \newcommand*{\cventrynotitle}[1]{%
   \vspace{-4.0mm}
   \setlength\tabcolsep{0pt}
@@ -732,10 +759,10 @@
 % Define an environment for cvskill
 \newenvironment{cvskills}{%
   \vspace{\acvSectionContentTopSkip}
-  \vspace{-2.0mm}
+  \vspace{0mm}
   \begin{center}
     \setlength\tabcolsep{1ex}
-    \setlength{\extrarowheight}{0pt}
+    \setlength{\extrarowheight}{-5pt}
     \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l L{\textwidth * \real{0.9}}}
 }{%
     \end{tabular*}
