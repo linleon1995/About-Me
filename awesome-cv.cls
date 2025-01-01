@@ -788,6 +788,19 @@
 }
 
 
+\newcommand{\linkitem}[3]{%
+  \item 
+  \ifthenelse{\equal{#2}{}}%
+      {\textbf{\textcolor{darktext}{#1}}}%
+      {\href{#2}{\textbf{\textcolor{blue}{#1}}}}%
+  \ifthenelse{\equal{#3}{}}%
+      {}%
+      {\textbf{\textcolor{graytext}{\ \ | \ \ #3}}}%
+}
+
+
+
+
 %-------------------------------------------------------------------------------
 %                Commands for elements of Cover Letter
 %-------------------------------------------------------------------------------

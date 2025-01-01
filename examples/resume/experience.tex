@@ -18,37 +18,49 @@
     {Jul. 2021 - Dec. 2024} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Environment, health and safety (EHS) Cloud Service}
+        \linkitem{EHS General Mission Framework}{}{System Design}
         \begin{itemize}
-            % \item 協作開發視訊串流推論服務，包含Inference Service用於視訊串流推論、Scheduler用於定期部署推論服務、Event Engine用於確認事件。
-            % \item 優化模型推論工作
-            % \item 協作開發AI Agent Service，用於整合第三方AI服務，並提供統一介面。
-            \item Video Stream Inference Service: 協作開發視訊串流推論服務，設計架構支持大規模視訊推論工作負載。
-            \item Scheduler: 協作開發任務排程工具，用於定期部署推論服務。
-            \item Event Engine: 協助設計事件告警系統，界定服務工作邊界與制訂一致的事件表達形式。
-            \item Inference Optimization: 使用TensorRT優化模型推論工作，提升推論性能。
-            \item AI Agent Service: 與團隊協作整合第三方 AI 服務，提供統一 API 界面。
+            % \item 主導EHS Mission Pipeline的重構工作。重新設計了系統流程與資料結構。協助協作開發視訊串流推論服務，設計架構支持大規模視訊推論工作負載。
+            \item 主導EHS Mission Pipeline的重構工作。重新設計了系統架構與資料流，並且強化角色職責以及確立角色間互動關係。
+            \item 協助Event Engine設計事件告警系統，制定清晰的事件工作邊界與制訂一致的表達形式。
         \end{itemize}
-        \item {Demo Tool}
+        \linkitem{Mission Inference Optimization}{}{Pytorch | TensorRT}
         \begin{itemize}
-            \item 協助使用Streamlit開發輕量化的Demo工具，用於展示EHS服務相關成果。
+            \item 透過使用TensorRT 模型、Pytoch重新實作推論前後處理、以及使用多執行序來優化模型推論工作，並在最大容忍延遲的條件下增加模型的最大推論數量，在相同硬體條件 (NVIDIA T4)。可支援攝影機由X路提升到Y路，提升幅度為Z\%
         \end{itemize}
-        \item {Machine Learning Algorithm Develope}
+        \linkitem{EHS Scheduler}{}{Python | Kubernetes | MongoDB}
         \begin{itemize}
-            \item Protective personal equipment (PPE): 協助設計PPE演算法。並訓練新版本PPE模型，在測試資料集上mAP由X提升到Y，準確度提升Z\%
+            \item 協作EHS Scheduler用於管理任務排程，負責響應來自Portal的推論服務部署並進行Kubernetes資源的管理與調度。
+        \end{itemize}
+        \linkitem{AI Agent Service}{}{FastAPI | Azure AI | Pydantic}
+        \begin{itemize}
+            \item 使用FastAPI實作統一的API介面。整合Azure AI、Copilot 等第三方 AI 服務，並使用Pydantic進行API Interface之驗證。
+        \end{itemize}
+        \item{Machine Learning Algorithm Develope}{}{PyTorch | Detection | Pose Estimation}
+        \begin{itemize}
+            \item Protective personal equipment (PPE): 協助設計PPE演算法。並訓練新版本PPE模型，在測試資料集上mAP由 0.301 提升到 0.404，準確度提升 34.22\%
             % \item 設計稀疏事件推論架構： 透過稀疏事件推論架構，提升視訊串流推論效能，預估能夠帶來至少X\%的成本節省。
         \end{itemize}
-        % \item {MLOps pipeline Develope}
+        % \linkitem{Protective personal equipment (PPE)}{}{Pytorch}
+        % \begin{itemize}
+            % \item 協助設計PPE演算法。並訓練新版本PPE模型，在測試資料集上mAP由 0.301 提升到 0.404，準確度提升 34.22\%
+            % \item 設計稀疏事件推論架構： 透過稀疏事件推論架構，提升視訊串流推論效能，預估能夠帶來至少X\%的成本節省。
+        % \end{itemize}
+        % \linkitem {MLOps pipeline Develope}{}{}
         % \begin{itemize}
         %     \item EHS Training Service: 使用Airflow、Pytorch建立統一訓練框架。提供簡易、一致的訓練介面。
         % \end{itemize}
-        \item \textbf{\textcolor{blue}{Medical AI}} \textbf{\textcolor{gray}{| C++ | TensorFlow | PyTorch}}
-        % \item {Medical AI}
+        \linkitem{Snoring Detection}{}{C++ | PyTorch | TFLite}
         \begin{itemize}
-            \item Snoring Detection: 與 ASUS 移動裝置部門合作，開發鼾聲偵測演算法，準確率高達 94.12 \%。負責將模型以 TensorFlow 導出為 TFLite 格式，並以 C++ 實現頻譜轉換功能。同時，透過微調預訓練模型，大幅提升演算法在高噪音環境下的偵測性能。
+            \item 與 ASUS 移動裝置部門合作，開發鼾聲偵測演算法，準確率高達 94.12 \%。負責將模型以 TensorFlow 導出為 TFLite 格式，並以 C++ 實現頻譜轉換功能。同時，透過微調預訓練模型，大幅提升演算法在高噪音環境下的偵測性能。
         \end{itemize}
+        \linkitem{3D Lung Nodule Segmentation}{}{PyTorch | 3D Slicer}
         \begin{itemize}
-            \item 3D Lung Nodule Segmentation: 與台南大型醫院合作開發肺結節分割與分類演算法，在醫院測試集上平均分割 DSC 達 0.7481，分類準確率達 91.84\%，並開發 3D Slicer 插件協助醫院進行模型推論與肺結節預測可視化。
+            \item 與台南大型醫院合作開發肺結節分割與分類演算法，在醫院測試集上平均分割 DSC 達 0.7481，分類準確率達 91.84\%，並開發 3D Slicer 插件協助醫院進行模型推論與肺結節預測可視化。
+        \end{itemize}
+        \linkitem{EHS Demo Tool}{}{Streamlit}
+        \begin{itemize}
+            \item 協助使用Streamlit開發輕量化的前端介面，用於在離線狀況快速展示EHS服務應用概念。
         \end{itemize}
       \end{cvitems}
     }
