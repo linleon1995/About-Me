@@ -1,0 +1,68 @@
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Work Experience}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+
+%---------------------------------------------------------
+  \cventrynew
+    {Machine Learning Engineer} % Job title
+    {ASUS AIoT} % Organization
+    % {Taipei, Taiwan} % Location
+    {Jul. 2021 - Dec. 2024} % Date(s)
+    {
+        \begin{cvitems} % Description(s) of tasks/responsibilities
+          \linkitem{EHS General Mission Framework}{}{System Design}
+          \begin{itemize}
+              \item Led the refactoring of the EHS Mission Pipeline by redesigning the system architecture and data flow, strengthening role responsibilities, 
+              and defining clear interaction relationships between roles.
+              \item Assisted in designing the Event Engine’s alert system by establishing clear boundaries and consistent representation for event.
+          \end{itemize}
+          \linkitem{Mission Inference Optimization}{}{Pytorch | TensorRT}
+          \begin{itemize}
+              \item By utilizing TensorRT, reimplementing preprocessing and postprocessing with PyTorch, and optimizing model inference tasks through multithreading, 
+              the maximum number of model inferences was increased under the condition of maximum tolerable latency. On the same hardware (NVIDIA T4), 
+              the number of supported cameras increased from X to Y, representing an improvement of Z%.
+          \end{itemize}
+          \linkitem{EHS Scheduler}{}{Python | Kubernetes | MongoDB}
+          \begin{itemize}
+              \item Collaborated on developing the EHS Scheduler for managing task scheduling, 
+              responding to inference service deployment requests from the EHS Portal, and handling Kubernetes resource management and scheduling.
+          \end{itemize}
+          \linkitem{AI Agent Service}{}{FastAPI | Azure AI | Pydantic}
+          \begin{itemize}
+              \item Developed a unified API interface using FastAPI, integrating third-party AI services such as Azure AI and Copilot, 
+              and validated the API interface with Pydantic.
+          \end{itemize}
+          \linkitem{Machine Learning Algorithm Development}{}{PyTorch | Detection | Pose Estimation}
+          \begin{itemize}
+              \item Designed and trained a new version of the Protective Personal Equipment (PPE) detection algorithm. 
+              Achieved a 34.22\% improvement in accuracy, increasing mAP from 0.301 to 0.404 on the test dataset.
+          \end{itemize}
+          \linkitem{Snoring Detection}{}{C++ | PyTorch | TFLite}
+          \begin{itemize}
+              \item Collaborated with ASUS mobile device departments to develop a snoring detection algorithm with an accuracy of 94.12\%. 
+              Exported the model to TFLite format and implemented spectrogram transformation in C++. 
+              Fine-tuned pretrained models to significantly enhance detection performance in high-noise environments.
+          \end{itemize}
+          \linkitem{3D Lung Nodule Segmentation}{}{PyTorch | 3D Slicer}
+          \begin{itemize}
+              \item Developed lung nodule segmentation and classification algorithms in collaboration with a major hospital in Tainan. Achieved an average segmentation DSC of 0.7481 and classification accuracy of 91.84\% on hospital test datasets. 
+              Additionally, developed a 3D Slicer plugin to assist the hospital in model inference and visualization of lung nodule predictions.
+          \end{itemize}
+          \linkitem{EHS Demo Tool}{}{Streamlit}
+          \begin{itemize}
+              \item Assisted in developing a lightweight frontend interface using Streamlit to quickly showcase EHS service applications in offline scenarios.
+          \end{itemize}
+        \end{cvitems}
+    }
+  
+
+%---------------------------------------------------------
+\end{cventries}
