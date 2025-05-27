@@ -1,1 +1,1 @@
-[Leon Lin Resume](resume_en.pdf)
+[Leon Lin Resume](examples/resume_en.pdf)
