@@ -80,6 +80,10 @@
 % \RequirePackage[default,opentype]{sourcesanspro}
 \newcommand{\TimesNewRoman}{\fontspec{Times New Roman}}
 \newcommand{\Arial}{\fontspec{Arial}}
+\newcommand{\EBGaramond}{\fontspec{EB Garamond}}
+\newcommand{\Georgia}{\fontspec{Georgia}}
+\newcommand{\NotoSerif}{\fontspec{Noto Serif}}
+
 
 % Needed for the photo ID
 \RequirePackage[skins]{tcolorbox}
@@ -168,25 +172,28 @@
 %-------------------------------------------------------------------------------
 %                Configuration for fonts
 %-------------------------------------------------------------------------------
-\newcommand*{\headerfont}{\roboto}
-\newcommand*{\headerfontlight}{\robotolight}
+\newcommand*{\headerfont}{\Arial}
+\newcommand*{\headerfontlight}{\Arial}
 % \newcommand*{\footerfont}{\sourcesanspro}
 % \newcommand*{\bodyfont}{\sourcesanspro}
 % \newcommand*{\bodyfontlight}{\sourcesansprolight}
-\newcommand*{\footerfont}{\TimesNewRoman}
-\newcommand*{\bodyfont}{\TimesNewRoman}
-\newcommand*{\bodyfontlight}{\TimesNewRoman}
+% \newcommand*{\bodyfont}{\TimesNewRoman}
+% \newcommand*{\bodyfont}{\fontspec{Times New Roman}\bfseries}
+\newcommand*{\footerfont}{\roboto}
+\newcommand*{\bodyfont}{\roboto\bfseries}
+\newcommand*{\bodyfontlight}{\roboto}
 
 %-------------------------------------------------------------------------------
 %                Configuration for styles
 %-------------------------------------------------------------------------------
 % Configure styles for each CV elements
-\newcommand*{\plaintextstytle}[1]{{\fontsize{10pt}{0.8em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\plaintextstytle}[1]{{\fontsize{11pt}{0.8em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\plaintextstytlenew}[1]{{\fontsize{9pt}{0.8em}\bodyfont\bfseries\color{darktext} #1}}
 
 % For fundamental structures
 \newcommand*{\headerfirstnamestyle}[1]{{\fontsize{28pt}{1em}\headerfontlight\color{graytext} #1}}
 \newcommand*{\headerlastnamestyle}[1]{{\fontsize{28pt}{1em}\headerfont\bfseries\color{text} #1}}
-\newcommand*{\headerpositionstyle}[1]{{\fontsize{7.6pt}{1em}\bodyfont\scshape\color{awesome} #1}}
+\newcommand*{\headerpositionstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\scshape\color{awesome} #1}}
 \newcommand*{\headeraddressstyle}[1]{{\fontsize{8pt}{1em}\headerfont\itshape\color{lighttext} #1}}
 \newcommand*{\headersocialstyle}[1]{{\fontsize{6.8pt}{1em}\headerfont\color{text} #1}}
 \newcommand*{\headerquotestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\itshape\color{darktext} #1}}
@@ -195,11 +202,16 @@
 \newcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\scshape\textcolor{text}{#1}}}
 \newcommand*{\paragraphstyle}{\fontsize{8pt}{0.8em}\bodyfontlight\upshape\color{text}}
 
+\newcommand*{\linktitlestyle}[1]{{\fontsize{10pt}{0.55em}\bodyfont\bfseries\color{darktext} #1}}
+
+
 % For elements of entry
-\newcommand*{\entrytitlestyle}[1]{{\fontsize{10pt}{0.85em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\entrytitlestylenew}[1]{{\fontsize{10pt}{0.85em}\bodyfont\bfseries\color{blue} #1}}
-\newcommand*{\entrypositionstyle}[1]{{\fontsize{10pt}{0.85em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\entrydatestyle}[1]{{\fontsize{10pt}{0.85em}\bodyfontlight\slshape\color{graytext} #1}}
+\newcommand*{\entrytitlestyle}[1]{{\fontsize{11pt}{0.85em}\bodyfont\bfseries\color{blue} #1}}
+\newcommand*{\entrytitlestylenew}[1]{{\fontsize{9pt}{0.85em}\bodyfont\bfseries\color{blue} #1}}
+\newcommand*{\entrypositionstyle}[1]{{\fontsize{11pt}{0.55em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\entrypositionstylenew}[1]{{\fontsize{9pt}{0.55em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\entrydatestyle}[1]{{\fontsize{11pt}{0.85em}\bodyfontlight\slshape\color{graytext} #1}}
+\newcommand*{\entrydatestylenew}[1]{{\fontsize{9pt}{0.85em}\bodyfontlight\slshape\color{graytext} #1}}
 \newcommand*{\entrylocationstyle}[1]{{\fontsize{10pt}{0.85em}\bodyfontlight\slshape\color{awesome} #1}}
 \newcommand*{\descriptionstyle}[1]{{\fontsize{9pt}{0.85em}\bodyfontlight\upshape\color{text} #1}}
 
@@ -227,9 +239,11 @@
 \newcommand*{\lettertitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\bfseries\color{darktext} \underline{#1}}}
 \newcommand*{\letterdatestyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
 \newcommand*{\lettertextstyle}{\fontsize{10pt}{1.4em}\bodyfontlight\upshape\color{graytext}}
-\newcommand*{\letternamestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\letternamestyle}[1]{{\fontsize{12pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\letterenclosurestyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\slshape\color{lighttext} #1}}
 
+% For highlight
+\newcommand*{\highlight}[1]{{\fontsize{9pt}{1em}\bodyfont\slshape\color{lighttext} #1}}
 
 %-------------------------------------------------------------------------------
 %                Commands for personal information
@@ -670,32 +684,78 @@
 }{%
   \end{center}
 }
-% Define an entry of cv information
-% Usage: \cventry{<position>}{<title>}{<location>}{<date>}{<description>}
+
+
 \newcommand*{\cventry}[5]{%
-  \vspace{-2.0mm}
+  \vspace{-2mm}%
+  % \begingroup
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
+  % \leavevmode
+  % Title and location
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
-    \ifempty{#2#3}
-      {\entrypositionstyle{#1} & \entrydatestyle{#4} \\}
-      {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
-      \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
-    \ifstrempty{#5}
-      {}
-      {\multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}} \\}
+  \ifempty{#2#3}
+    % 沒有 title/location
+    {\entrypositionstylenew{#1} & \entrydatestyle{#4} \\}
+    {\entrypositionstylenew{#1} \plaintextstytle{at} \entrytitlestylenew{#2} & \entrylocationstyle{#3} \\}
+    % \vspace{-1mm}
+    % {\entrypositionstyle{#5}}
+  % Description
+  \ifstrempty{#5}
+    {}
+    {\vspace{-1mm}\par {\entrypositionstylenew{#5}}\par}
   \end{tabular*}%
+  % \endgroup
 }
 
 
-\newcommand*{\cventrynew}[4]{%
+% % education (tabular)
+% \newcommand*{\cventryedu}[4]{%
+%   \vspace{-2.0mm}
+%   \setlength\tabcolsep{0pt}
+%   \setlength{\extrarowheight}{0pt}
+%   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
+%     \ifempty{#2#3}
+%     {\entrypositionstylenew{#1} & \entrydatestylenew{#4} \\}
+%     {\entrypositionstylenew{#1} \plaintextstytle{at} \entrytitlestylenew{#2} & \entrylocationstyle{#3} \\}
+%     \ifstrempty{#4}
+%       {}
+%       {
+%         \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#4}} \\
+%       }
+%   \end{tabular*}%
+% }
+
+% % education (plain LaTex)
+\newcommand*{\cventryedu}[4]{%
+  \vspace{-1mm}
+  % 行首：左邊為學位與學校，右邊為時間
+  \noindent
+  \begin{minipage}[t]{0.75\textwidth}
+    {\entrypositionstylenew{#1} \ifstrempty{#2}{}{\plaintextstytlenew{at} \entrytitlestylenew{#2} }}%
+  \end{minipage}%
+  \hfill%
+  \begin{minipage}[t]{0.22\textwidth}
+    \raggedleft{\entrydatestylenew{#3}}
+  \end{minipage}%
+  \par
+  % 下方描述（可選）
+  \ifstrempty{#3}{}{%
+    \vspace{-1.5mm}
+    \noindent\descriptionstyle{#4}
+    \par
+  }%
+}
+
+% experience
+\newcommand*{\cventryexp}[4]{%
   \vspace{-2.0mm}
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
     \ifempty{#2#3}
       {\entrypositionstyle{#1} & \entrydatestyle{#4} \\}
-      {\entrypositionstyle{#1} \plaintextstytle{at} \entrytitlestylenew{#2} & \entrylocationstyle{#3} \\}
+      {\entrypositionstyle{#1} \plaintextstytle{at} \entrytitlestyle{#2} & \entrylocationstyle{#3} \\}
     \ifstrempty{#4}
       {}
       {\multicolumn{2}{L{\textwidth}}{\descriptionstyle{#4}} \\}
@@ -703,6 +763,7 @@
 }
 
 
+% projects
 \newcommand*{\cventrynotitle}[1]{%
   \vspace{-4.0mm}
   \setlength\tabcolsep{0pt}
@@ -713,6 +774,7 @@
       {\multicolumn{2}{L{\textwidth}}{\descriptionstyle{#1}} \\}
   \end{tabular*}%
 }
+
 
 % Define an environment for cvsubentry
 \newenvironment{cvsubentries}{%
@@ -789,6 +851,16 @@
 
 
 \newcommand{\linkitem}[3]{%
+  \item 
+  \ifthenelse{\equal{#2}{}}%
+      {\linktitlestyle{#1}}%
+      {\linktitlestyle{#1}}%
+  \ifthenelse{\equal{#3}{}}%
+      {}%
+      {\textbf{\textcolor{graytext}{\ \ | \ \ #3}}}%
+}
+
+\newcommand{\linkitemold}[3]{%
   \item 
   \ifthenelse{\equal{#2}{}}%
       {\textbf{\textcolor{darktext}{#1}}}%

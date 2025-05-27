@@ -9,60 +9,67 @@
 %-------------------------------------------------------------------------------
 \begin{cventries}
 
-
 %---------------------------------------------------------
-  \cventrynew
-    {Machine Learning Engineer} % Job title
-    {ASUS AIoT} % Organization
-    % {Taipei, Taiwan} % Location
-    {Jul. 2021 - Dec. 2024} % Date(s)
-    {
-        \begin{cvitems} % Description(s) of tasks/responsibilities
-          \linkitem{EHS General Mission Framework}{}{System Design}
-          \begin{itemize}
-              \item Led the refactoring of the EHS Mission Pipeline by redesigning the system architecture and data flow, strengthening role responsibilities, 
-              and defining clear interaction relationships between roles.
-              \item Assisted in designing the Event Engine’s alert system by establishing clear boundaries and consistent representation for event.
-          \end{itemize}
-          \linkitem{Mission Inference Optimization}{}{Pytorch | TensorRT}
-          \begin{itemize}
-              \item By utilizing TensorRT, reimplementing preprocessing and postprocessing with PyTorch, and optimizing model inference tasks through multithreading, 
-              the maximum number of model inferences was increased under the condition of maximum tolerable latency. On the same hardware (NVIDIA T4), 
-              the number of supported cameras increased from X to Y, representing an improvement of Z%.
-          \end{itemize}
-          \linkitem{EHS Scheduler}{}{Python | Kubernetes | MongoDB}
-          \begin{itemize}
-              \item Collaborated on developing the EHS Scheduler for managing task scheduling, 
-              responding to inference service deployment requests from the EHS Portal, and handling Kubernetes resource management and scheduling.
-          \end{itemize}
-          \linkitem{AI Agent Service}{}{FastAPI | Azure AI | Pydantic}
-          \begin{itemize}
-              \item Developed a unified API interface using FastAPI, integrating third-party AI services such as Azure AI and Copilot, 
-              and validated the API interface with Pydantic.
-          \end{itemize}
-          \linkitem{Machine Learning Algorithm Development}{}{PyTorch | Detection | Pose Estimation}
-          \begin{itemize}
-              \item Designed and trained a new version of the Protective Personal Equipment (PPE) detection algorithm. 
-              Achieved a 34.22\% improvement in accuracy, increasing mAP from 0.301 to 0.404 on the test dataset.
-          \end{itemize}
-          \linkitem{Snoring Detection}{}{C++ | PyTorch | TFLite}
-          \begin{itemize}
-              \item Collaborated with ASUS mobile device departments to develop a snoring detection algorithm with an accuracy of 94.12\%. 
-              Exported the model to TFLite format and implemented spectrogram transformation in C++. 
-              Fine-tuned pretrained models to significantly enhance detection performance in high-noise environments.
-          \end{itemize}
-          \linkitem{3D Lung Nodule Segmentation}{}{PyTorch | 3D Slicer}
-          \begin{itemize}
-              \item Developed lung nodule segmentation and classification algorithms in collaboration with a major hospital in Tainan. Achieved an average segmentation DSC of 0.7481 and classification accuracy of 91.84\% on hospital test datasets. 
-              Additionally, developed a 3D Slicer plugin to assist the hospital in model inference and visualization of lung nodule predictions.
-          \end{itemize}
-          \linkitem{EHS Demo Tool}{}{Streamlit}
-          \begin{itemize}
-              \item Assisted in developing a lightweight frontend interface using Streamlit to quickly showcase EHS service applications in offline scenarios.
-          \end{itemize}
-        \end{cvitems}
-    }
-  
+\cventryexp
+{Machine Learning Engineer} % Job title
+{ASUS AIoT} % Organization
+% {Taipei, Taiwan} % Location
+{Jul. 2021 - Jun. 2025} % Date(s)
+{
+    \begin{cvitems} % Description(s) of tasks/responsibilities
+        \linkitem{Mission Inference Optimization}{}{Pytorch, TensorRT}
+        \begin{itemize}
+            \item Optimized the inference pipeline by leveraging TensorRT, adopting a 
+            dynamic batching strategy, switching to asynchronous inference, and offloading 
+            computations to the GPU using custom CUDA kernels to maximize throughput. 
+            \item As a result, the number of supported real-time video streams per 
+            Kubernetes node increased from 8 to \textbf{14} on NVIDIA T4 (\textbf{75\%} improvement), potentially 
+            saving clients over \textbf{\$30,000 USD} annually in infrastructure costs.
+        \end{itemize}
+        \linkitem{EHS General Mission Framework}{}{Python, System Design}
+        \begin{itemize}
+            \item Built a flexible and extensible CCTV AI inference system 
+            supporting multiple AI capabilities—including object detection, 
+            action recognition, and other skills—that can be easily integrated 
+            and executed through the unified framework.
+            \item Closely collaborated with a team of 3 colleagues to enhance the 
+            EHS mission pipeline, focused on effective teamwork and clear coordination of 
+            responsibilities. Responsible for progress tracking and contributed to hands-on 
+            development.
+        \end{itemize}
+        \linkitem{EHS Scheduler}{}{Python, Kubernetes, MongoDB}
+        \begin{itemize}
+            \item Contributed to the development of the EHS Scheduler to handle mission scheduling requests from the EHS Portal, 
+            orchestrating the full lifecycle of CCTV AI task pods on Kubernetes.
+        \end{itemize}
+        \linkitem{AI Agent Service}{}{Azure AI, Pydantic}
+        \begin{itemize}
+            \item Designed and implemented a unified API service to register and 
+            forward AI task requests from the EHS Portal, integrating third-party 
+            AI services such as Azure AI and Copilot, with robust request validation 
+            handled through Pydantic.
+        \end{itemize}
+        \linkitem{Machine Learning Algorithm Development}{}{PyTorch, Detection, Pose Estimation}
+        \begin{itemize}
+            \item Designed and trained a new version of the Protective Personal Equipment (PPE) detection algorithm to help ensure workplace safety in TSMC factory. 
+            Achieved a 34.22\% improvement in accuracy, increasing mAP from 0.301 to 0.404.
+        \end{itemize}
+        \linkitem{Snoring Detection}{}{C++, PyTorch, TFLite}
+        \begin{itemize}
+            \item Developed a snoring detection algorithm using PyTorch, with spectrogram transformation implemented in C++, achieving 
+            94.12\% accuracy on the testing dataset. The model was exported to TFLite format for deployment on mobile devices.
+        \end{itemize}
+        \linkitem{3D Lung Nodule Segmentation}{https://leetcode.com/problems/unique-paths/submissions/1638278192/}{PyTorch, 3D MaskRCNN}
+        \begin{itemize}
+            \item Developed lung nodule segmentation and classification algorithms by using 3D MaskRCNN. Achieved an average segmentation DSC of 0.7481 and classification accuracy of 91.84\% on hospital test datasets. 
+            % \item Developed a 3D Slicer plugin to facilitate model inference and enable visualization of lung nodule predictions, enhancing user accessibility and interpretability.
+        \end{itemize}
+    %   \linkitem{EHS Demo Tool}{}{Streamlit}
+    %   \begin{itemize}
+    %       \item Assisted in developing a lightweight frontend interface using Streamlit to quickly showcase EHS service applications in offline scenarios.
+    %   \end{itemize}
+    \end{cvitems}
+}
 
 %---------------------------------------------------------
 \end{cventries}

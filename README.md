@@ -102,7 +102,7 @@ In either case, this should result in the creation of ``{your-cv}.pdf``
 
 [**LaTeX FontAwesome**](https://github.com/furl/latex-fontawesome) is bindings for FontAwesome icons to be used in XeLaTeX.
 
-[**Roboto**](https://github.com/google/roboto) is the default font on Android and ChromeOS, and the recommended font for Google’s visual language, Material Design.
+[**Roboto**](https://github.com/google/roboto) is the default font on Android and ChromeOS, and the recommended font for Google's visual language, Material Design.
 
 [**Source Sans Pro**](https://github.com/adobe-fonts/source-sans-pro) is a set of OpenType fonts that have been designed to work well in user interface (UI) environments.
 
