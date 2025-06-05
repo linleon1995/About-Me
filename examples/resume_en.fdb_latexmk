@@ -1,11 +1,11 @@
 # Fdb version 3
-["xdvipdfmx"] 1748363026 "resume_en.xdv" "resume_en.pdf" "resume_en" 1748363026
-  "resume_en.xdv" 1748363026 47748 257e4c4396195419084d78ec38642faa "xelatex"
+["xdvipdfmx"] 1749142409 "resume_en.xdv" "resume_en.pdf" "resume_en" 1749142409
+  "resume_en.xdv" 1749142409 48368 180a921d4bfb917f9290fbc26c18d24c "xelatex"
   (generated)
   "resume_en.pdf"
-["xelatex"] 1748363025 "/home/linleon1995/project/Awesome-CV/examples/resume_en.tex" "resume_en.xdv" "resume_en" 1748363026
+["xelatex"] 1749142408 "/home/linleon1995/project/Awesome-CV/examples/resume_en.tex" "resume_en.xdv" "resume_en" 1749142409
   "/etc/texmf/web2c/texmf.cnf" 1724607154 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/linleon1995/project/Awesome-CV/examples/resume_en.tex" 1748363023 4004 ed34643758b51f2bc904692b9b129585 ""
+  "/home/linleon1995/project/Awesome-CV/examples/resume_en.tex" 1749142337 4004 ed34643758b51f2bc904692b9b129585 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1136768653 1528 abec98dbc43e172678c11b3b9031252a ""
@@ -198,13 +198,13 @@
   "/usr/share/texmf/tex/latex/CJK/CJKfntef.sty" 1485503905 12851 a92a26031294f6fa88114f524b3b794a ""
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1724609480 5133161 6bdf2065ca38ad2133ca89495a9f024e ""
-  "awesome-cv.cls" 1748363021 33315 f334e6aa0fafb087dbf4952e52e97e8c ""
+  "awesome-cv.cls" 1749141833 33337 fece5111d057246b1153b06858aeeaee ""
   "cv/skills.tex" 1747313902 1192 6a16e3dbed11563abc4a223720bce98b ""
-  "resume/education.tex" 1748282932 1323 02672c0c8c48e4d6a832f7067971cb3f ""
-  "resume/experience_en.tex" 1748362934 4456 707d68b8a89b278fcec6c745fe9ad1a3 ""
-  "resume/projects_en.tex" 1748362137 2423 1602dc2d563e05a7a080e09385e7c3c0 ""
-  "resume_en.aux" 1748363026 740 b258aaafb2060fa690741b41e6c364e6 "xelatex"
-  "resume_en.tex" 1748363023 4004 ed34643758b51f2bc904692b9b129585 ""
+  "resume/education.tex" 1749142408 1475 d1c30b5cbc5e5c9de4d375c65da518fe ""
+  "resume/experience_en.tex" 1749141872 4414 e3a745e64a242167423a80b7b4d8eacd ""
+  "resume/projects_en.tex" 1749141752 2505 f29f421204c8616edbe14873c307bb46 ""
+  "resume_en.aux" 1749142409 740 b258aaafb2060fa690741b41e6c364e6 "xelatex"
+  "resume_en.tex" 1749142337 4004 ed34643758b51f2bc904692b9b129585 ""
   (generated)
   "resume_en.aux"
   "resume_en.log"

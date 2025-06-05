@@ -727,12 +727,12 @@
 % }
 
 % % education (plain LaTex)
-\newcommand*{\cventryedu}[4]{%
+\newcommand*{\cventryedu}[5]{%
   \vspace{-1mm}
   % 行首：左邊為學位與學校，右邊為時間
   \noindent
   \begin{minipage}[t]{0.75\textwidth}
-    {\entrypositionstylenew{#1} \ifstrempty{#2}{}{\plaintextstytlenew{at} \entrytitlestylenew{#2} }}%
+    {\entrypositionstylenew{#1} \ifstrempty{#2}{}{\plaintextstytlenew{at} \href{#4}{\entrytitlestylenew{#2}} }}%
   \end{minipage}%
   \hfill%
   \begin{minipage}[t]{0.22\textwidth}
@@ -742,23 +742,23 @@
   % 下方描述（可選）
   \ifstrempty{#3}{}{%
     \vspace{-1.5mm}
-    \noindent\descriptionstyle{#4}
+    \noindent\descriptionstyle{#5}
     \par
   }%
 }
 
 % experience
-\newcommand*{\cventryexp}[4]{%
+\newcommand*{\cventryexp}[5]{%
   \vspace{-2.0mm}
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
     \ifempty{#2#3}
-      {\entrypositionstyle{#1} & \entrydatestyle{#4} \\}
-      {\entrypositionstyle{#1} \plaintextstytle{at} \entrytitlestyle{#2} & \entrylocationstyle{#3} \\}
-    \ifstrempty{#4}
+      {\entrypositionstyle{#1} & \entrydatestyle{#5} \\}
+      {\entrypositionstyle{#1} \plaintextstytle{at} \href{#4}{\entrytitlestyle{#2}} & \entrylocationstyle{#3} \\}
+    \ifstrempty{#5}
       {}
-      {\multicolumn{2}{L{\textwidth}}{\descriptionstyle{#4}} \\}
+      {\multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}} \\}
   \end{tabular*}%
 }
 
@@ -850,7 +850,7 @@
 }
 
 
-\newcommand{\linkitem}[3]{%
+\newcommand{\linkitemold}[3]{%
   \item 
   \ifthenelse{\equal{#2}{}}%
       {\linktitlestyle{#1}}%
@@ -860,7 +860,7 @@
       {\textbf{\textcolor{graytext}{\ \ | \ \ #3}}}%
 }
 
-\newcommand{\linkitemold}[3]{%
+\newcommand{\linkitem}[3]{%
   \item 
   \ifthenelse{\equal{#2}{}}%
       {\textbf{\textcolor{darktext}{#1}}}%
