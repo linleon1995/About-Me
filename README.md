@@ -1,3 +1,3 @@
-[Leon Lin – Machine Learning Engineer Resume (Hyperlink included)](examples/resume_en.pdf)
-![image](https://github.com/user-attachments/assets/5149a3af-bbba-4e10-9972-d939b84058fe)
-
+# Leon Lin – Machine Learning Engineer
+[Open on Github](examples/resume_en.pdf)
+[Download My Resume](https://drive.google.com/file/d/14olOYguGfad-UdGBLPm9qtxBiGJhOP3K/view?usp=sharing)
