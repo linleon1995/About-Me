@@ -1,2 +1,3 @@
 [Leon Lin Resume](examples/resume_en.pdf)
-![image](https://github.com/user-attachments/assets/912aac8e-a0f0-414e-9494-0e0e784a5e66)
+![image](https://github.com/user-attachments/assets/5149a3af-bbba-4e10-9972-d939b84058fe)
+
