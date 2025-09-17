@@ -2,8 +2,7 @@
 
 Welcome to my resume repository. This repository contains my up-to-date resume and links to relevant projects.
 
-- 📄 [Preview Resume on GitHub](examples/resume_en.pdf)
-- ⬇️ [Download Full Resume with Working Hyperlinks](https://drive.google.com/file/d/14olOYguGfad-UdGBLPm9qtxBiGJhOP3K/view?usp=sharing)
+- 📄 [Preview Resume on GitHub](examples/Leon_Lin.pdf)
 
 ---
 
