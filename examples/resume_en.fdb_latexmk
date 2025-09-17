@@ -1,11 +1,11 @@
 # Fdb version 3
-["xdvipdfmx"] 1751707164 "resume_en.xdv" "resume_en.pdf" "resume_en" 1751707164
-  "resume_en.xdv" 1751707164 48980 827733ef651d5b8d032e68d481ed03ef "xelatex"
+["xdvipdfmx"] 1758126740 "resume_en.xdv" "resume_en.pdf" "resume_en" 1758126740
+  "resume_en.xdv" 1758126740 48672 4daab788c90d7d34c7bbae4bdf61c10d "xelatex"
   (generated)
   "resume_en.pdf"
-["xelatex"] 1751707161 "/home/linleon1995/project/Awesome-CV/examples/resume_en.tex" "resume_en.xdv" "resume_en" 1751707164
+["xelatex"] 1758126738 "/home/linleon1995/project/Awesome-CV/examples/resume_en.tex" "resume_en.xdv" "resume_en" 1758126740
   "/etc/texmf/web2c/texmf.cnf" 1724607154 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/linleon1995/project/Awesome-CV/examples/resume_en.tex" 1749142411 4004 ed34643758b51f2bc904692b9b129585 ""
+  "/home/linleon1995/project/Awesome-CV/examples/resume_en.tex" 1758126738 4006 775d2fe544b4d3d88b0ca204a380bbec ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1136768653 1528 abec98dbc43e172678c11b3b9031252a ""
@@ -201,10 +201,10 @@
   "awesome-cv.cls" 1749141833 33337 fece5111d057246b1153b06858aeeaee ""
   "cv/skills.tex" 1747313902 1192 6a16e3dbed11563abc4a223720bce98b ""
   "resume/education.tex" 1749142408 1475 d1c30b5cbc5e5c9de4d375c65da518fe ""
-  "resume/experience_en.tex" 1751707161 4413 928bc140a21f20119dbd2b47565aa710 ""
+  "resume/experience_en.tex" 1758125224 4411 c7994861b431a99d1304db33971a3035 ""
   "resume/projects_en.tex" 1750957820 3658 821fc450605f90d55f3210e07835baf3 ""
-  "resume_en.aux" 1751707164 740 b258aaafb2060fa690741b41e6c364e6 "xelatex"
-  "resume_en.tex" 1749142411 4004 ed34643758b51f2bc904692b9b129585 ""
+  "resume_en.aux" 1758126740 740 b258aaafb2060fa690741b41e6c364e6 "xelatex"
+  "resume_en.tex" 1758126738 4006 775d2fe544b4d3d88b0ca204a380bbec ""
   (generated)
   "resume_en.aux"
   "resume_en.log"

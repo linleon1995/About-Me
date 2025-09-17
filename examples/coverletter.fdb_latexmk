@@ -1,9 +1,9 @@
 # Fdb version 3
-["xdvipdfmx"] 1749141011 "coverletter.xdv" "coverletter.pdf" "coverletter" 1749141011
-  "coverletter.xdv" 1749141011 26732 3e6a7058e275b643956e8a1de0898486 "xelatex"
+["xdvipdfmx"] 1758125811 "coverletter.xdv" "coverletter.pdf" "coverletter" 1758125811
+  "coverletter.xdv" 1758125810 26852 6b8390a70f7abfabc8f229428a7cfd69 "xelatex"
   (generated)
   "coverletter.pdf"
-["xelatex"] 1749141009 "/home/linleon1995/project/Awesome-CV/examples/coverletter.tex" "coverletter.xdv" "coverletter" 1749141011
+["xelatex"] 1758125809 "/home/linleon1995/project/Awesome-CV/examples/coverletter.tex" "coverletter.xdv" "coverletter" 1758125811
   "/etc/texmf/web2c/texmf.cnf" 1724607154 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/linleon1995/project/Awesome-CV/examples/coverletter.tex" 1734972785 5939 bd17ad7deb85e25603022cc24163d585 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -172,8 +172,8 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1724609480 5133161 6bdf2065ca38ad2133ca89495a9f024e ""
-  "awesome-cv.cls" 1749140999 33315 0388079b1c8c2365ed123232c1f10b58 ""
-  "coverletter.aux" 1749141011 596 c88ae3f6d8f558768c3bef4aa44ed6e7 "xelatex"
+  "awesome-cv.cls" 1749141833 33337 fece5111d057246b1153b06858aeeaee ""
+  "coverletter.aux" 1758125810 596 c88ae3f6d8f558768c3bef4aa44ed6e7 "xelatex"
   "coverletter.tex" 1734972785 5939 bd17ad7deb85e25603022cc24163d585 ""
   (generated)
   "coverletter.aux"
